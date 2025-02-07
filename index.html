@@ -1,38 +1,350 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Мото Магазин</title>
 </head>
+
 <body>
-    <div class="product-container">
-        <div class="card special-offer">
-            <img src="https://moto-stock.ru/upload/iblock/5f1/5f1854d345ff95c7693108cd356d0e3e.png" alt="Product 1">
-            <h3>Цепь DID 520 ERVT</h3>
-            <p>DID official</p>
-            <p class="price">15 000 </p>
+    <header class="qaq">
+        <div class="container">
+            <h1 class="mt">Мото Магазин</h1>
+            <nav>
+
+                <ul>
+
+                    <a href="http://127.0.0.1:5500/index.html" class="animated-button">Главная</a>
+
+                    <a href="https://www.rollingmoto.ru/catalog/" class="animated-button">каталог</a>
+                    <a href="https://www.rollingmoto.ru/contacts/" class="animated-button">контакты</a>
+                </ul>
+            </nav>
         </div>
-        <div class="card">
-            <img src="https://cdn2.kolesa-darom.ru/api/v1/image/bucket/iblock/d6c/d6c60720e0fe0414165a39befe2bb238/7b2d6d09e253a5da7a3ecd649ed8896c.jpg?quality=100" alt="Product 2">
-            <h3>Мотошина Gummy ZS-078C 140/80 R18 70M </h3>
-            <p>SM-PARTS</p>
-            <p class="price">5500</p>
+    </header>
+
+
+
+    <br>
+<br>
+<br>    
+
+
+
+    <main>
+        <h2 class="textt">Наши товары</h2>
+        <div class="product-list">
+            <div class="product">
+                <div class="video-container">
+                    <img src="images/Remove-bg.ai_1734192571908.png" alt="Image" class="image">
+                    <video class="video" muted loop>
+                        <source src="video/IMG_1452 (1).MP4" type="video/mp4">
+                    </video>
+                </div>
+
+                <script>
+                    const container = document.querySelector('.video-container');
+                    const video = document.querySelector('.video');
+
+                    container.onmouseover = () => {
+                        video.style.display = 'block';
+                        video.play();
+                    };
+                    container.onmouseout = () => {
+                        video.pause();
+                        video.currentTime = 0;
+                        video.style.display = 'none';
+                    };
+                </script>
+
+                <h3>Airoh TWIST 2.0 COLOR BLACK MATTS</h3>
+                <p>шлем обладающий прочностью и легкостью.</p>
+                <p class="price">Цена: 40000 рублей</p>
+                <a href="https://www.rollingmoto.ru/product/shlem-krossovyy-fly-racing-formula-carbon-vector_89882/?oid=89899"
+                    class="buy-button">Купить</a>
+            </div>
+            <div class="product">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Воспроизведение видео при наведении</title>
+                    <style>
+                        .video-container1 {
+                            position: relative;
+                            display: inline-block;
+                        }
+
+                        .photo {
+                            width: 300px;
+                        }
+
+                        .video1 {
+                            position: absolute;
+                            top: 0;
+                            left: 50px;
+                            width: 100%;
+                            height: 100%;
+                            display: none;
+                        }
+                    </style>
+                </head>
+
+                <div class="video-container1">
+                    <img src="images/Remove-bg.ai_1734192400375.png" class="photo" id="hoverImage">
+                    <video class="video1" id="hoverVideo" muted>
+                        <source src="video/IMG_1545.MOV" type="video/mp4">
+                    </video>
+                </div>
+                <script>
+                    const img = document.getElementById('hoverImage');
+                    const video1 = document.getElementById('hoverVideo');
+
+                    img.addEventListener('mouseenter', () => {
+                        video.style.display = 'block';
+                        video.play();
+                    });
+                    img.addEventListener('mouseleave', () => {
+                        video.pause();
+                        video.currentTime = 0;
+                        video.style.display = 'none';
+                    });
+                </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <br>
+
+                <h3>покрышка задняя Mitas 754</h3>
+                <br>
+                <p>одна из самых лучших покрышек в эндуро.</p>
+
+                <p class="price">Цена: 11 000 рублей</p>
+                <a href="https://www.rollingmoto.ru/product/pokryshka-mitas-19-100-90-19-m-c-57m-c-16-tt_46540/"
+                    class="buy-button">Купить</a>
+            </div>
+            <div class="product">
+                <img src="images/Remove-bg.ai_1734192754631.png" alt="Мотоцикл Yamaha MT-07">
+                <br>
+                <br>
+
+                <h3>графика для эндуро Мотоциклов</h3>
+                <p>подберем графику к твоему эндуро мотоциклу.</p>
+                <p class="price">Цена: 7500 рублей</p>
+                <a href="https://motographics.ru/product-category/graphics/motocross/kitajskie-moto/"
+                    class="buy-button">Купить</a>
+            </div>
+
+
+            <div class="product">
+                <img src="images/Remove-bg.ai_1734192812819.png" alt="Мотоцикл Yamaha MT-07">
+                <br>
+                <br>
+
+                <h3>Фара для ктм 2012-2016</h3>
+
+                <p>одна из самых лучших фар в эндуро.</p>
+                <p class="price">Цена: 5520 рублей</p>
+                <a href="https://www.rollingmoto.ru/product/fara-avtextreme-dlya-mototsikla-dizayn-ktm14-20-chernaya_87169/?ysclid=m4ocvndesx734631456"
+                    class="buy-button">Купить</a>
+            </div>
+
+            <div class="product">
+                <img src="images/Remove-bg.ai_1734195881176.png" alt="Мотоцикл Yamaha MT-07">
+                <h3>Мотоцикл KTM EXC 250</h3>
+                <p>под заказ.</p>
+                <p class="price">Цена: 1 199 000 рублей</p>
+                <a href="https://ktm-motorcycles.ru/product/ktm-250-exc-2023" class="buy-button">Купить</a>
+            </div>
+            <div class="product">
+                <img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_PERS_REVO_TE-300-MY2025-front-right_%23SALL_%23AEPI_%23V1.png"
+                    alt="Мотоцикл Yamaha MT-07">
+                <br>
+                <br>
+                <h3>HUSQVARNA TE 300 2024</h3>
+                <p>любая комплектация под заказ срок доставки (20-30) дней.</p>
+                <p class="price">Цена: 1 450 000 рублей</p>
+                <a href="https://www.husqvarna-motorcycles.com/en-int/models/enduro/2-stroke/te-300-2025.html"
+                    class="buy-button">Купить</a>
+            </div>
+            <div class="product">
+                <img src="images/Remove-bg.ai_1734191998407.png" alt="Мотоцикл Yamaha MT-07">
+                <h3>GR-8 ENDURO PRO </h3>
+                <p>мотоцикл GR-8 ENDURO PRO 2024 300 (2T) под заказ срок доставки (20-30) дней.</p>
+                <p class="price">Цена: 514 000 рублей</p>
+                <a href="https://www.rollingmoto.ru/product/mototsikl-gr8-t300l-2t-mt-300-enduro-rr-s-progressiey-2024g-_84761/"
+                    class="buy-button">Купить</a>
+            </div>
+            <div class="product">
+                <img src="images/Remove-bg.ai_1734192145912.png" alt="Мотоцикл Yamaha MT-07">
+                <h3>KAYO K2 PRO</h3>
+                <p>Мотоцикл KAYO K2 PRO 21/18 (2024 г.) под заказ срок доставки (20-30) дней.</p>
+                <p class="price">Цена: 188 990 рублей</p>
+                <a href="https://www.rollingmoto.ru/product/mototsikl-krossovyy-kayo-k2-pro-21-18-2024-g-_84669/?oid=84708"
+                    class="buy-button">Купить</a>
+            </div>
+
+            <head>
+                <meta charset="UTF-8">
+                <title>Видео при наведении</title>
+                <style>
+                    .video-container {
+                        position: relative;
+                        display: inline-block;
+                    }
+
+                    .video {
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                    }
+
+                    .image {
+                        width: 300px;
+                        /* Задайте нужную ширину */
+                    }
+                </style>
+            </head>
+
+
+
+            <script>
+                const container = document.querySelector('.video-container');
+                const videoss = document.querySelector('.video');
+
+                container.onmouseover = () => {
+                    video.style.display = 'block';
+                    video.play();
+                };
+                container.onmouseout = () => {
+                    video.pause();
+                    video.currentTime = 0;
+                    video.style.display = 'none';
+                };
+            </script>
+
+
+
+
+
         </div>
-        <div class="card">
-            <img src="https://avatars.mds.yandex.net/i?id=55e490068ecbd2d41f592dffd9d1850a_l-10512701-images-thumbs&n=13" alt="Product 3">
-            <h3>Графика КТМ SXF 250/SX 250</h3>
-            <p>RMG</p>
-            <p class="price">от 5500</p>
+    </main>
+
+
+
+
+
+    <div class="b0">
+
+        <div class="b1">
+            <br>
+            <br>
+            <br>Доставка в любую точку России
+            Доставка любого товара в любую точку России
         </div>
-        <div class="card">
-            <img src="https://avatars.mds.yandex.net/i?id=e654417a93901d0c107f40248fd9300e_l-4944707-images-thumbs&n=13" alt="Product 4">
-            <h3>Руль 7/8 MINI RENTHAL (SUZUKI) 783-01-OR оранжевый</h3>
-            <p>роллинг мото</p>
-            <p class="price">7500</p>
+
+
+        <div class="b2">
+            <br>
+            <br>
+            <br>Розничная сеть в России и собственный сервис
+            Самая большая розничная сеть
+            мотосалонов в России
+        </div>
+
+
+
+
+        <div class="b3">
+            <br>
+            <br>
+            <br>
+            Фирменная гарантия
+            Наши товары сертифицированы и обеспечены гарантией производителей
+        </div>
+
+
+    </div>
+
+
+    <br>
+    <br>
+
+
+    <div class="kontact1">
+        <br>
+        наше местоположение
+    </div>
+
+    <br>
+    <div class="karta">
+        <iframe class="karta1"
+            src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;source=constructor-api&amp;um=constructor%3A0958674b94c8a0b623793abf3a1c457bc876cc1f8eef7545ec4844ca0f969733"
+            frameborder="0" allowfullscreen="true" width="780px" height="526px"
+            style="width: 80%;display: block;"></iframe>
+    </div>
+
+
+
+
+    <br>
+
+
+
+
+    <br>
+
+
+    <!-- Блок "Как с нами связаться" -->
+    <div class="contact-us">
+        <h2>Как с нами связаться</h2>
+        <p>Вы можете связаться с нами по следующим каналам:</p>
+        <ul>
+            <li>Телефон: <a href="tel:+123456789">8 800-555-35-35 </a></li>
+            <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+            <li>Адрес: 123 Улица, Город, Страна</li>
+        </ul>
+        <h3>Социальные сети</h3>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
         </div>
     </div>
-    
+
+
+    <br>
+
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Мото Магазин. Все права защищены.</p>
+    </footer>
+
+
 </body>
+
 </html>
